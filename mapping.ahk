@@ -4,9 +4,9 @@
 
 ; 無変換
 Hotkey, SC07B, Disable
-;;変換
+;変換
 Hotkey, SC079, Disable
-;;ひらがな/カタカナ
+;ひらがな/カタカナ
 HotKey, SC070, Disable
 
 ; ---------------------------------------------------------------------------
@@ -16,6 +16,20 @@ Disable:
 Return
 
 ; ---------------------------------------------------------------------------
-; マッピング
+; Mapping
+; ---------------------------------------------------------------------------
 ; CapsLock -> Ctrl
 CapsLock::Ctrl
+
+; Shift+Space -> DoubleByte Space(Unicode)
++Space::Send, {U+3000}
+
+; 無変換/変換+Space -> Toggle Input mode
+SC07B & Space::
+SC079 & Space::SC029
+
+; 半角/全角 -> Esc
+SC029::Escape
+
+; Script Reload
+!r::Reload

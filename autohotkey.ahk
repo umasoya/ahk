@@ -12,4 +12,7 @@
 ; Include
 ; ----------------------------------------------------------------------------
 ; Mapping
-#Include %A_ScriptDir%\mapping.ahk
+#Include %A_ScriptDir%\Mapping.ahk
+
+; HotString
+;#Include %A_ScriptDir%\HotString.ahk
