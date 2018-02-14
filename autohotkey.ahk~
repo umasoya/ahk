@@ -1,4 +1,0 @@
-; vim: set ai tw=78 expandtab
-;#InstallKeybdHook
-#Include %A_ScriptDir%\mapping.ahk
-; --------------------------------------------------------------------------------------
