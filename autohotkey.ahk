@@ -16,3 +16,6 @@
 
 ; HotString
 ;#Include %A_ScriptDir%\HotString.ahk
+
+; Rauncher
+#Include %A_ScriptDir%\Rauncher.ahk
