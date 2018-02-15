@@ -28,8 +28,5 @@ CapsLock::Ctrl
 SC07B & Space::
 SC079 & Space::SC029
 
-; 半角/全角 -> Esc
-SC029::Escape
-
 ; Script Reload
 !r::Reload

@@ -17,5 +17,5 @@
 ; HotString
 ;#Include %A_ScriptDir%\HotString.ahk
 
-; Rauncher
-#Include %A_ScriptDir%\Rauncher.ahk
+; Launcher
+#Include %A_ScriptDir%\Launcher.ahk
