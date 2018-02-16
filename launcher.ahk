@@ -1,8 +1,9 @@
 ; ---------------------------------------------------------------------------
 ; Launcher
 ; ---------------------------------------------------------------------------
-!g::launchOrActivate("chrome.exe")
 !f::launchOrActivate("firefox.exe")
+!g::launchOrActivate("chrome.exe")
+!m::launchOrActivate("thunderbird.exe")
 
 launchOrActivate(target)
 {

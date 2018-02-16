@@ -21,8 +21,8 @@ Return
 ; CapsLock -> Ctrl
 CapsLock::Ctrl
 
-; Shift+Space -> DoubleByte Space(Unicode)
-+Space::Send, {U+3000}
+; Alt+Space -> DoubleByte Space(Unicode)
+!Space::Send, {U+3000}
 
 ; 無変換/変換+Space -> Toggle Input mode
 SC07B & Space::
