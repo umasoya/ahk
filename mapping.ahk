@@ -35,9 +35,13 @@ SC079 & Space::SC029
 ; For specific software
 ; ---------------------------------------------------------------------------
 ; PDF-XChanger Viewer
+#IfWinExist ahk_class DSUI:PDFXCViewer
+    !p::WinActivate, ahk_class DSUI:PDFXCViewer
+#IfWinExist
+
 #IfWinActive ahk_class DSUI:PDFXCViewer
-^h::Left
-^j::Down
-^k::Up
-^l::Right
+    ^h::Left
+    ^j::Down
+    ^k::Up
+    ^l::Right
 #IfWinActive
