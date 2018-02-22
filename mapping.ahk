@@ -30,3 +30,14 @@ SC079 & Space::SC029
 
 ; Script Reload
 !r::Reload
+
+; ---------------------------------------------------------------------------
+; For specific software
+; ---------------------------------------------------------------------------
+; PDF-XChanger Viewer
+#IfWinActive ahk_class DSUI:PDFXCViewer
+^h::Left
+^j::Down
+^k::Up
+^l::Right
+#IfWinActive
