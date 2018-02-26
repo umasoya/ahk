@@ -4,6 +4,7 @@
 !f::launchOrActivate("firefox.exe")
 !g::launchOrActivate("chrome.exe")
 !m::launchOrActivate("thunderbird.exe")
+!s::launchOrActivate("slack.exe")
 
 launchOrActivate(target)
 {
