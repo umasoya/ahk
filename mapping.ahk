@@ -50,8 +50,10 @@ SC079 & Space::SC029
 ; ---------------------------------------------------------------------------
 ; Window controll
 ; ---------------------------------------------------------------------------
-; Toggle active window maximization
 !Space::toggleWinMaximize()
+!q::WinClose, A
+
+; Toggle active window maximization
 toggleWinMaximize()
 {
     WinGet, maxp, MinMax, A
