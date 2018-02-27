@@ -22,7 +22,7 @@ Return
 CapsLock::Ctrl
 
 ; Alt+Space -> DoubleByte Space(Unicode)
-!Space::Send, {U+3000}
+; !Space::Send, {U+3000}
 
 ; 無変換/変換+Space -> Toggle Input mode
 SC07B & Space::
@@ -45,3 +45,19 @@ SC079 & Space::SC029
     ^k::Up
     ^l::Right
 #IfWinActive
+
+
+; ---------------------------------------------------------------------------
+; Window controll
+; ---------------------------------------------------------------------------
+; Toggle active window maximization
+!Space::toggleWinMaximize()
+toggleWinMaximize()
+{
+    WinGet, maxp, MinMax, A
+    If maxp = 1
+        WinRestore, A
+    Else
+        WinMaximize, A
+    Return
+}
