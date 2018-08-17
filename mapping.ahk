@@ -28,6 +28,9 @@ CapsLock::Ctrl
 SC07B & Space::
 SC079 & Space::SC029
 
+; Disabled Win+Space
+#Space::Return
+
 ; Script Reload
 !r::Reload
 
